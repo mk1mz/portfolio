@@ -33,8 +33,34 @@ body {
     position: relative;
 }
 
+@media (max-width: 600px) {
+    .profile-card {
+        transform: scale(1);
+        max-width: 90%; 
+        padding: 20px; 
+    }
+
+    .image {
+        height: 120px; 
+        width: 120px;
+    }
+
+    .text-data .name {
+        font-size: 22px;
+    }
+
+    .text-data .job {
+        font-size: 18px; 
+    }
+
+    .buttons .button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
 .profile-card {
-    transform: scale(1.2);
+    transform: scale(1);
     transform-origin: center;
     max-width: 400px;
     padding: 30px;
