@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Profile Card UI Design</title>
+    <link rel="stylesheet" href="styles-cards.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQHSDXKU0MDZaw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731029683399?e=1744243200&v=beta&t=Jcu9NvPpUjpBBJnj5-x2ZZuemzm3ywj7L48n0wsd2ZI" alt="Profile Image" class="profile-img"/>
+        </div>
+
+        <div class="text-data">
+            <span class="name">Mohamed Kamel Mazari</span>
+            <span class="job">Coder</span>
+        </div>
+
+        <div class="media-buttons">
+            <a href="https://www.linkedin.com/in/mohamed-kamel-mazari-903026286/" style="background: darkblue" class="link"
+            target="_blank" 
+            rel="noopener noreferrer">
+                  <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://t.me/themrzer0" style="background: cyan" class="link"
+            target="_blank" 
+            rel="noopener noreferrer"
+            >
+                <i class='bx bxl-telegram' ></i>
+            </a>
+            <a href="https://www.instagram.com/beta_.mk" style="background: #e1306c" class="link"
+            target="_blank" 
+            rel="noopener noreferrer">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+            <a href="https://www.youtube.com/@mk1mz" style="background: red" class="link"
+            target="_blank" 
+            rel="noopener noreferrer"
+            >
+                <i class='bx bxl-youtube' ></i>
+            </a>
+        </div>
+        <div class="buttons" onclick="showMessagePopup()">
+            
+            <button class="button">Email</buttons>
+        </div>
+    </div>
+</body>
+<script>
+    function showMessagePopup() {
+        let email = "mazarii.mk@gmail.com";
+        alert("📧 My Email: " + email);
+    }
+    </script>
+    
+</html>

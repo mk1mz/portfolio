@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.profile-card {
+    transform: scale(1.2);
+    transform-origin: center;
+    max-width: 400px;
+    padding: 30px;
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 45%;
+    width: 100%;
+    border-radius: 24px 24px;
+    background-color: #6C63FF;
+}
+
+.image {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #242258;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    padding: 2%;
+}
+
+.text-data .name {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.text-data .job {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.profile-card .media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.media-buttons .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: white;
+    background-color: #4070f4;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.profile-card .buttons {
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.buttons .button {
+    border-style: none;
+    border-radius: 10px;
+    background-color: #4070f4;
+    color: white;
+    margin: 0 8px;
+    padding: 10px 30px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2200ff;
+}
+
+.button:active {
+    background-color: #2b00ff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+@media (max-width: 600px) {
+    body {
+        transform: scale(1);
+    }
+    .profile-card {
+        width: 90%;
+        padding: 15px;
+    }
+}
