@@ -31,39 +31,18 @@ body {
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     position: relative;
+    animation: fadeIn 1s ease-in-out;
 }
 
-@media (max-width: 600px) {
-    .profile-card {
-        transform: scale(1);
-        max-width: 90%; 
-        padding: 20px; 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-
-    .image {
-        height: 120px; 
-        width: 120px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-
-    .text-data .name {
-        font-size: 22px;
-    }
-
-    .text-data .job {
-        font-size: 18px; 
-    }
-
-    .buttons .button {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-}
-
-.profile-card {
-    transform: scale(1);
-    transform-origin: center;
-    max-width: 400px;
-    padding: 30px;
 }
 
 .profile-card::before {
@@ -79,12 +58,18 @@ body {
 
 .image {
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     background-color: #242258;
     padding: 3px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.6);
 }
 
 .image .profile-img {
@@ -104,12 +89,12 @@ body {
 }
 
 .text-data .name {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
 }
 
 .text-data .job {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 200;
 }
 
@@ -131,6 +116,12 @@ body {
     background-color: #4070f4;
     margin: 0 8px;
     text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-buttons .link:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(64, 112, 244, 0.8);
 }
 
 .profile-card .buttons {
@@ -145,11 +136,10 @@ body {
     background-color: #4070f4;
     color: white;
     margin: 0 8px;
-    padding: 10px 30px;
+    padding: 8px 24px;
     width: 100%;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .button:hover {
